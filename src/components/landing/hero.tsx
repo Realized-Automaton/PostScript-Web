@@ -1,10 +1,18 @@
+"use client";
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { ArrowRight, ShieldCheck, Bot, BookMarked, MessageSquare, Mic, Video } from 'lucide-react';
-import Link from 'next/link';
 
 export default function Hero() {
+
+  const openWaitlistPopup = () => {
+    const url = 'http://eepurl.com/jjvBx6';
+    const windowName = 'mailchimpPopup';
+    const windowFeatures = 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=800';
+    window.open(url, windowName, windowFeatures);
+  }
+
   return (
     <section className="relative bg-background overflow-hidden">
       <div className="container mx-auto px-4 py-20 md:py-32 relative">
@@ -41,12 +49,12 @@ export default function Hero() {
             </div>
             
             <div className="mt-8 max-w-md mx-auto md:mx-0">
-              <Link href="http://eepurl.com/jjvBx6" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground shadow-md transition-all hover:shadow-lg hover:shadow-primary/30">
-                  Join Waitlist
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+              <Button 
+                onClick={openWaitlistPopup}
+                className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground shadow-md transition-all hover:shadow-lg hover:shadow-primary/30">
+                Join Waitlist
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
 
             <div className="mt-10 flex items-center justify-center md:justify-start gap-4 text-sm text-foreground/60">
