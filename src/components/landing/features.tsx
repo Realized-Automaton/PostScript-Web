@@ -24,7 +24,7 @@ export default function Features() {
     <section id="features" className="py-20 md:py-28 bg-background/80">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">A new way to remember and be remembered</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Where memory meets meaningful connection</h2>
           <p className="mt-4 text-lg text-foreground/70">
             PostScript AI lets you preserve and interact with the voice and personality of a loved one through AI-powered chat, creating a deeply personal way to remember and reconnect.
           </p>
