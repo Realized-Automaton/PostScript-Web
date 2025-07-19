@@ -11,10 +11,9 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} PostScript AI. All rights reserved.
           </p>
           <nav className="flex gap-4">
+            <Link href="/#features" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Features</Link>
             <Link href="/pricing" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Pricing</Link>
-            <Link href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Terms</Link>
-            <Link href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Privacy</Link>
-            <Link href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">Contact</Link>
+            <Link href="/about" className="text-sm text-foreground/60 hover:text-foreground transition-colors">About Us</Link>
           </nav>
         </div>
       </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Logo from "@/components/logo";
 
 export default function Header() {
@@ -12,22 +11,16 @@ export default function Header() {
           <Logo />
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          <Link href="#features" className="text-foreground/70 transition-colors hover:text-foreground">
+          <Link href="/#features" className="text-foreground/70 transition-colors hover:text-foreground">
             Features
           </Link>
           <Link href="/pricing" className="text-foreground/70 transition-colors hover:text-foreground">
             Pricing
           </Link>
-          <Link href="#" className="text-foreground/70 transition-colors hover:text-foreground">
+          <Link href="/about" className="text-foreground/70 transition-colors hover:text-foreground">
             About Us
           </Link>
         </nav>
-        <div className="flex items-center gap-4">
-          <Button variant="ghost" className="hidden sm:inline-flex">Log In</Button>
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-md transition-all hover:shadow-lg hover:shadow-primary/30">
-            Start Free
-          </Button>
-        </div>
       </div>
     </header>
   );
