@@ -26,7 +26,7 @@ export default function Features() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white">A new way to remember and be remembered</h2>
           <p className="mt-4 text-lg text-foreground/70">
-            PostScript AI provides a suite of tools designed for thoughtful memory preservation and meaningful connection.
+            PostScript AI lets you preserve and interact with the voice and personality of a loved one through AI-powered chat, creating a deeply personal way to remember and reconnect.
           </p>
         </div>
         <div className="mt-16 grid gap-8 md:grid-cols-3">
